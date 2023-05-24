@@ -1,0 +1,72 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Verificar numero</button>
+
+<script>
+
+	var input = document.querySelector('input');
+	var numeroSecreto = sortearNumeros(4);
+	input.focus();
+
+
+	function aleatorios() {
+		var numeroAleatorio = Math.round(Math.random() * 10);
+
+		return numeroAleatorio
+	}
+
+	function sortearNumeros(numero) {
+		var listaNumeros = [];
+		var contador = 0;
+		
+		while(contador <= numero) {
+			var encontrado = false;
+			let numeroAleatorio = aleatorios();
+
+			if (numeroAleatorio != 0) {
+				for(var indice = 0; indice <= listaNumeros.length; indice++) {
+					if (numeroAleatorio == listaNumeros[indice]) {
+						encontrado = true;
+						break;
+					}
+				}
+					if (encontrado == false) {
+						listaNumeros.push(numeroAleatorio);
+						contador += 1;
+					}
+			}
+			
+		}
+
+		return listaNumeros
+
+	}
+
+	function verificar() {
+
+		var acierto = false;
+
+
+		for (var indice = 0; indice <= 3; indice++) {
+			if (input.value == numeroSecreto[indice]) {
+				alert('Usted acerto!');
+				acierto = true;
+				break
+			}
+	
+		}
+		input.value = '';
+		input.focus();
+
+		if (acierto == false) {
+			alert('Usted erro!');
+		}
+		
+	}
+
+
+	var button = document.querySelector('button');
+	button.onclick = verificar
+
+</script>

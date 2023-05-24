@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h3>Programa - Tablas de Multiplicar</h3>
+<br>
+<br>
+<br>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+
+	let multiplo = parseInt(prompt('Ingrese el numero que desea saber la tabla'));
+	let multiplicador = 1;
+
+
+	imprimirFrase('Loop While')
+
+	while(multiplicador <= 10) {
+		imprimirFrase(multiplo * multiplicador);
+		multiplicador += 1;
+	}
+
+	imprimirFrase('Loop For')
+
+	for (let multiplicadorDos = 1; multiplicadorDos <= 10; multiplicadorDos++) {
+		imprimirFrase(multiplo * multiplicadorDos);
+	}
+
+</script>

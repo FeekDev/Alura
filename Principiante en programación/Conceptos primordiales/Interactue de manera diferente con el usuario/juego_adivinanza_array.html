@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<input>
+<button>Verificar numero</button>
+
+<script>
+
+	var input = document.querySelector('input');
+	var numeroSecreto = [1, 4, 6, 8];
+	input.focus();
+
+	function verificar() {
+		if (parseInt(input.value) == numeroSecreto[1]) {
+			alert('Usted acerto!');
+		}
+		else {
+			alert('Usted erro!' + numeroSecreto);
+		}
+		input.value = '';
+		input.focus();
+	}
+
+
+	var button = document.querySelector('button');
+	button.onclick = verificar
+
+</script>

@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h3>Programa - Tablas de Multiplicar</h3>
+<br>
+<br>
+<br>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+
+	let numeroMiembros = parseInt(prompt('Ingrese la cantidad de miembros de la familia'));
+	let edad = 0;
+	let contador = 0;
+
+	while(contador < numeroMiembros) {
+		edad += parseInt(prompt('Ingrese la edad correspondiente'));
+		contador += 1;
+	}
+
+	let mediaEdades = edad/contador
+
+	imprimirSinSalto('La edad media del grupo familiar es de: ' + mediaEdades)
+
+</script>

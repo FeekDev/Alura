@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h3>IMC</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function calcularIMC(peso,altura) {
+		return (peso / (Math.pow(altura, 2)));
+	}
+
+	let promedioIMC = (calcularIMC(66, 1.70) + calcularIMC(55, 1.65))/2
+	imprimirFrase('El promedio de IMC entre Felipe y Yury es: ' + promedioIMC.toFixed(2))
+
+</script>

@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<h3>Programa de las fechas de los mundiales</h3>
+<br>
+<br>
+<br>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+
+	let anoMundial = 1930;
+	let anoMundialUsuario = parseInt(prompt('Ingrese la fecha hasta la cual desea ver'))
+
+
+
+	while(anoMundial <= anoMundialUsuario) {
+		imprimirFrase('El año del mudnia fue el: ' + anoMundial);
+		anoMundial += 4;
+	}
+
+	imprimirSinSalto('Mundiales realizados')
+
+</script>

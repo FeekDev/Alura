@@ -1,0 +1,51 @@
+<meta charset="UTF-8">
+
+<h3>Juego de adivinanza</h3>
+
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+	let numeroAleatorio = Math.round(Math.random()*10);
+	
+
+	let intentos = 3;
+	let contador = 1;
+
+	while (contador <= 3) {
+
+		var numeroElegido = parseInt(prompt('Elija el numero'))
+
+		if (numeroAleatorio == numeroElegido) {
+			alert('Muy bien y acertaste en el intento: ' + contador);
+			break;
+		} else {
+			alert('Fallaste, te quedan ' + (intentos - contador) + ' intentos');
+		}
+
+		contador += 1;
+	}
+
+	if (numeroAleatorio == numeroElegido) {
+		imprimirSinSalto('Bien, elegiste el numero correcto: ' + numeroElegido + ' en el intento ' + contador);
+	}
+	
+	else {
+		imprimirSinSalto('Fallaste, el numero correcto era ' + numeroAleatorio);
+	}
+
+</script>

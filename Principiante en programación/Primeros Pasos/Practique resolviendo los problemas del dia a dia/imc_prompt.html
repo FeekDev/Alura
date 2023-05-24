@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+
+<h3>Calculador IMC</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function calcularIMC(peso,altura) {
+		let imc = (peso / (Math.pow(altura, 2)));
+		return imc.toFixed(2)
+	}
+
+	nombrePersona = prompt('Indique su nombre')
+	pesoPersona = prompt(nombrePersona + ' Ingrese por favor su peso');
+	alturaPersona = prompt(nombrePersona + ' Ingrese por favor su altura');
+
+
+	imprimirFrase(nombrePersona + ' su IMC es: ' + calcularIMC(pesoPersona,alturaPersona));
+
+</script>

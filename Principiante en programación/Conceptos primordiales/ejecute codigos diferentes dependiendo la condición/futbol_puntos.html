@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h3>Calculador Puntos Equipo de Futbol</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	let nombreEquipo = prompt('Indique el nombre del equipo');
+	let victoriasEquipo = parseInt((prompt(nombreEquipo + ' ¿Cuántos partidos gano?')));
+	let empatesEquipo = parseInt((prompt(nombreEquipo + ' ¿Cuántos partidos empato?')));
+
+	let puntosTotal = victoriasEquipo * 3 + empatesEquipo;
+
+	imprimirFrase('El equipo ' + nombreEquipo + ' obtuvo un total de ' + puntosTotal + ' puntos');
+
+</script>

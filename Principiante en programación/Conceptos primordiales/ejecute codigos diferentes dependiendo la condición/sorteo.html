@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h3>Juego de adivinanza</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+	function imprimirHeaderH1(frase) {
+		document.write('<h1>' + frase + '</h1>');
+	}
+
+	function sorteo(numero) {
+		let numeroIndicado = Math.round(Math.random() * numero);
+		return numeroIndicado;
+	}
+
+	let numeroAleatorio = sorteo(20);
+	let numeroElegido = parseInt(prompt('Elija el numero'))
+
+	imprimirHeaderH1('El numero es: ' + numeroAleatorio);
+
+	if (numeroAleatorio > numeroElegido) {
+		imprimirSinSalto('El numero elegido es menor');
+	} else {
+		imprimirSinSalto('El numero elegido es mayor');
+	}
+
+
+
+</script>

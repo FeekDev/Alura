@@ -1,0 +1,31 @@
+<h3>Diferencia de edades</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function calcularIMC(peso,altura,nombre) {
+		let imc = (peso / (Math.pow(altura, 2)));
+		imprimirFrase('El IMC de ' + nombre + ' es ' + imc.toFixed(2));
+	}
+
+	calcularIMC(71,1.72,'Felipe');
+	calcularIMC(55,1.65,'Yury');
+
+</script>

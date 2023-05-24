@@ -1,0 +1,55 @@
+<canvas width="600" height="400"></canvas>
+
+<script >
+
+	let pantalla = document.querySelector("canvas");
+	let pincel = pantalla.getContext("2d");
+
+	let serie2009 = [6, 47, 41, 3, 3]; // cada valor es un %
+	let serie2019 = [81, 9, 3, 3, 4];
+
+	var colores = ["blue","green","yellow", "red","gray"];
+
+	function dibujarRectangulo(x, y, base, altura, color) {
+		let pantalla = document.querySelector("canvas");
+		let pincel = pantalla.getContext("2d");
+
+		pincel.fillStyle = color;
+		pincel.fillRect(x, y, base, altura, color);
+		pincel.strokeStyle = 'black';
+		pincel.strokeRect(x, y, base, altura);
+		return false;
+	}
+
+	function dibujarTexto(x, y, texto) {
+		let pantalla = document.querySelector("canvas");
+		let pincel = pantalla.getContext("2d");
+
+		pincel.font = '15px Georgia';
+		pincel.fillStyle = 'black';
+		pincel.fillText(texto, x, y)
+	}
+
+	function dibujarBarra(x, y, serie, colores, texto) {
+
+		var contador = 0 // se define e inisializa en 0
+
+		dibujarTexto(x + 10, y - 15, texto); // trae el x,y de la linea 48 y despues de la 49
+
+		/* Este ciclo es para recorrer el array
+		se inicia recorriendo en el indice 0
+		hasta el indice 4 */
+		while(contador <= serie.length) {
+			dibujarRectangulo(x, y, 50, serie[contador], colores[contador]);
+			y = y + serie[contador] // aqui vamos cambiando de posicion en y
+			contador += 1; //aqui le sumamos al contador para cambiar de indice en el array
+		}
+
+		
+	}
+
+	
+	dibujarBarra(50, 50, serie2009, colores, '2009')
+	dibujarBarra(150, 50, serie2019, colores, "2019");
+
+</script>

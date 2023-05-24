@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<h3>Calculador IMC</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+	function calcularIMC(peso,altura) {
+		let imc = (peso / (Math.pow(altura, 2)));
+		return imc.toFixed(2)
+	}
+
+	nombrePersona = prompt('Indique su nombre')
+	pesoPersona = prompt(nombrePersona + ' Ingrese por favor su peso');
+	alturaPersona = prompt(nombrePersona + ' Ingrese por favor su altura');
+
+	let imcObtenido = calcularIMC(pesoPersona,alturaPersona)
+
+	imprimirFrase(nombrePersona + ' su IMC es: ' + imcObtenido);
+
+
+	imprimirSinSalto('<h3>Ponderacion de acuerdo al IMC obtenido</h3>');
+
+	if (imcObtenido < 18.5) {
+		imprimirSinSalto(nombrePersona + ' su IMC está en el rango de Bajo peso');
+	}
+
+	if (imcObtenido > 18.5 && imcObtenido < 24.9) {
+		imprimirSinSalto(nombrePersona + ' su IMC está en el rango Normal');
+	}
+
+	if (imcObtenido > 25.0 && imcObtenido < 29.9) {
+		imprimirSinSalto(nombrePersona + ' su IMC está en el rango de Sobrepeso');
+	}
+
+	if (imcObtenido >= 30.0) {
+		imprimirSinSalto(nombrePersona + ' su IMC está en el rango de Obesidad');
+	}
+
+</script>

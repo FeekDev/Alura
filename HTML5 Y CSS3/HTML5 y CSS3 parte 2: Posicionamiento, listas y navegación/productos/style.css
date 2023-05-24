@@ -1,0 +1,274 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.encabezado {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#navegador {
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: #c18c19;
+    text-decoration: underline overline;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c18c19;
+    border-style: dashed;
+}
+
+.productos li:active {
+    border-color: green;
+}
+
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos h2:hover {
+    font-size: 33px;
+}
+
+.productos-descripción {
+    font-size: 17px;
+}
+
+.productos-precio {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 30px;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    padding: 15px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 17px;
+}
+
+.clase-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 5px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 2s all;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 40px 70px;
+    
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: solid 1px #000000;
+    padding: 15px 25px;
+}
+
+/* CSS para el Home*/
+
+.banner {
+    width: 100%;
+}
+
+.Principal {
+    padding: 35px 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 1.8em;
+    margin: 0 0 1em;
+    clear: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.Principal > h2:before {
+content: '💈';
+}
+
+.Principal > h2:after {
+    content: '💈';
+    }
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 10px 20px 10px;
+}
+
+.Principal p {
+    margin: 0 0 1em;
+}
+
+p strong {
+    font-weight: bold;
+}
+
+p em {
+    font-style: italic;
+}
+
+.ubicacion {
+    padding: 5em 0;
+    background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.ubicacion p {
+    text-align: center;
+    margin: 0 0 2em;
+    
+}
+
+.Diferenciales {
+    background: #888888;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: '◈';
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.lista-diferenciales {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.imagenDiferenciales {
+    width: 50%;
+    transition: 1s;
+    box-shadow: 13px 12px 10px -2px #000000;
+}
+
+.imagenDiferenciales:hover {
+    opacity: 50%;
+}
+
+.video {
+    width: 560px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+@media screen and (max-width:480px){
+    .encabezado, .Principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #navegador {
+        position: static;
+    }
+
+    .imagenDiferenciales {
+        width: 98%;
+    }
+}

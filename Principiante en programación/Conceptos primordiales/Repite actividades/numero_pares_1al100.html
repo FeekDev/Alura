@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h3>Programa - Numeros pares del 1 al 100</h3>
+<br>
+<br>
+<br>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+	let numeroInicial = 2;
+	let numeroFinal = 100;
+
+	while(numeroInicial <= numeroFinal) {
+		imprimirFrase('El numero par es el: ' + numeroInicial);
+		numeroInicial += 2;
+	}
+
+	imprimirSinSalto('Fin de los nuneros pares');
+
+</script>

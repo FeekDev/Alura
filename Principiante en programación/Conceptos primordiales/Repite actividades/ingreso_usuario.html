@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h3>Juego de adivinanza</h3>
+
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write('<big>' + frase + '</big>');
+		saltarLinea();
+	}
+
+	function imprimirSinSalto(frase) {
+		document.write('<big>' + frase + '</big>');
+	}
+
+	var nombreUsuarioRegistrado = 'Felipe';
+	var contraseñaUsuarioRegistrado = 'Felipe2023+*';
+
+
+	var intentos = 1;
+	var intentosMaximos = 3;
+
+	while (intentos <= intentosMaximos) {
+		var usuarioIngresado = prompt('Ingrese su usuario');
+		var contraseñaIngresado = prompt('Ingrese la contraseña');
+
+		if (nombreUsuarioRegistrado == usuarioIngresado && contraseñaUsuarioRegistrado == contraseñaIngresado) {
+			imprimirFrase('Bienvenido al curso de programación ' + nombreUsuarioRegistrado);
+			break;
+		} else {
+			alert('El usuario o la contraseña no están correctos le quedan ' + ( intentosMaximos - intentos) + ' intentos')
+		}
+		intentos += 1;
+	}
+
+	if (nombreUsuarioRegistrado != usuarioIngresado && contraseñaUsuarioRegistrado != contraseñaIngresado) {
+			imprimirFrase('Ya que no pudiste ingresar, comunicate con el administrador');
+		}
+
+</script>

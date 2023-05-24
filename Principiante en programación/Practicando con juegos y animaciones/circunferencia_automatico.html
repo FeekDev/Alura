@@ -1,0 +1,19 @@
+<canvas width="600" height="400"></canvas>
+
+<script >
+	let pantalla = document.querySelector('canvas');
+	let pincel = pantalla.getContext('2d')
+	pincel.fillStyle = 'lightgrey';
+	pincel.fillRect(0, 0, 600, 400);
+
+	function dibujarCircunferencia(x, y, radio) {
+		pincel.fillStyle = 'blue';
+		pincel.beginPath();
+		pincel.arc(x, y, radio, 0, 2 * Math.PI)
+		pincel.fill()
+	}
+
+	dibujarCircunferencia(300, 200, 50);
+	dibujarCircunferencia(150, 150, 10);
+
+</script>

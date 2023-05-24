@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+
+<h3>Variables</h3>
+
+<script>
+
+	let groupRap = prompt('What is your favorite goup rap');
+	let listeners = prompt('How many monthly listeners have?')
+
+	function printingWrite(words) {
+		document.write('<big>' + words + '</big>')
+	}
+
+	function skipLine(argument) {
+		document.write('<br>')
+		document.write('<br>')
+		document.write('<br>')	
+	}
+
+	function rateBand(group, listeners) {
+		let message = ' is a good group from Colombia';
+		let spotifyListeners = ' in Spotify have '
+		let monthlyListener = Math.round(listeners).toFixed(3);
+		printingWrite(group + message + spotifyListeners + monthlyListener);
+	}
+
+	rateBand(groupRap, listeners);
+	skipLine();
+
+</script>

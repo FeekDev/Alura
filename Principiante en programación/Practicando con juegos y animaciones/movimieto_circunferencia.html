@@ -1,0 +1,47 @@
+<canvas width="1000" height="400"></canvas>
+
+<script >
+	let pantalla = document.querySelector('canvas');
+	let pincel = pantalla.getContext('2d')
+	pincel.fillStyle = 'lightgrey';
+	pincel.fillRect(0, 0, 1000, 400);
+
+	function dibujarCircunferencia(x, y, radio) {
+		pincel.fillStyle = 'blue';
+		pincel.beginPath();
+		pincel.arc(x, y, radio, 0, 2 * Math.PI)
+		pincel.fill()
+	}
+
+	function limpiarPantalla() {
+		pincel.clearRect(0, 0, 1000, 400);
+	}
+
+	setInterval(moverCircunferenica, 10)
+
+	let x = 0
+	let sentido = 1
+
+	function moverCircunferenica() {
+
+		if((x <= 990) && (sentido == 1)){
+			limpiarPantalla();
+			dibujarCircunferencia(x, 10, 10);
+			x++;
+			if(x == 990) {
+				sentido = 0;
+			}
+		}
+		else if((x >= 10) && (sentido == 0)){
+			limpiarPantalla();
+			dibujarCircunferencia(x, 10, 10);
+			x--;
+			if(x == 10){
+				sentido = 1;
+			}
+		}
+	}
+
+
+
+</script>

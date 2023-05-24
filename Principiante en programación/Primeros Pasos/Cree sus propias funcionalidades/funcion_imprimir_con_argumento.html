@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+
+<h3>Edades</h3>
+
+
+<script>
+
+	let year = 2025
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	
+	function imprimirFrase(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+
+	imprimirFrase("<h2>Hombres</h2>")
+	imprimirFrase("La edad en el año " + year + " de Felipe es " + (year - 1996) + ' años');
+	imprimirFrase("La edad en el año " + year + " de Yury es " + (year - 1998) + ' años');
+	imprimirFrase("La edad en el año " + year + " de Simon es " + (year - 2006) + ' años');
+
+	imprimirFrase("<h2>Mujeres</h2>");
+
+	year = 2024;
+
+	let promedio = 0;
+
+	imprimirFrase("La edad de Isabella es " + (year - 2014) + ' años');
+	imprimirFrase("La edad de Yury es " + (year - 1999) + ' años');
+	imprimirFrase("La edad de Maria es " + (year - 2009) + ' años');
+</script>
