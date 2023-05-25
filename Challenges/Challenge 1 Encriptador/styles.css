@@ -1,0 +1,13 @@
+body {
+    background: #E9ECF8;
+}
+
+.logo-header {
+    display: flex;
+    position: absolute;
+}
+
+.personaje {
+    position: absolute;
+    align-content: flex-end;
+}
