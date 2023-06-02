@@ -7,7 +7,14 @@ body {
     position: absolute;
 }
 
-.personaje {
+.encriptador {
     position: absolute;
-    align-content: flex-end;
+    width: 27%;
+    top: 180px;
+    left: 957;
+    box-sizing: border-box;
+    border: solid;
+    margin: 5px auto;
+    border-radius: 30px;
+    height: 60%;
 }
