@@ -1,0 +1,41 @@
+.footer_contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    background-color: var(--background-footer);
+}
+
+.footer_logo {
+    margin-bottom: 4rem;
+}
+
+.lista_redes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.navegacion {
+    text-align: center;
+}
+
+.enlace_footer {
+    font-size: 1.1rem;
+    display: inline-block;
+    font-family: var(--Opens-Sans);
+    margin-right: .7rem;
+    margin-bottom: 1.25rem;
+    margin-left: .7rem;
+    color: var(--background-blanco);
+}
+
+@media screen and (min-width: 768px) {
+    .footer_logo {
+        width: 20rem;
+        align-self: center;
+    }
+
+    .lista_redes {
+        justify-content: space-around;
+    }
+}

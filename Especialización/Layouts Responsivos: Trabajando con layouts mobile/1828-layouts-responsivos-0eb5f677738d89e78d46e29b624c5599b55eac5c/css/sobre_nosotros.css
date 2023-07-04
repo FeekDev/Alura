@@ -1,0 +1,52 @@
+.sobre_nosotros_cotenido {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+
+.sobre_nosotros_titulo {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--fuente-ceniza-oscuro);
+}
+
+.primer_parrafo {
+    margin-bottom: 1rem;
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.segundo_parrafo {
+    margin-bottom: 1rem;
+    font-family: var(--Opens-Sans);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.tercer_parrafo {
+    margin-bottom: 1rem;
+    font-family: var(--Opens-Sans);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lista_marcas {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.sobre_nosotros_imagen {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .sobre_nosotros_imagen {
+        display: inline-flex;
+    }
+}

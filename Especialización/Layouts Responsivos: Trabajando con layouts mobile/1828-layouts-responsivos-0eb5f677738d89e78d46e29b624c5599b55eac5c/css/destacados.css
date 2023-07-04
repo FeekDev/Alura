@@ -1,0 +1,40 @@
+.destacados {
+    background-color: var(--background-azul-claro);
+    padding: 2rem 0;
+    
+}
+
+.titulo_destacados{ 
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: var(--Montserrat);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--fuente-ceniza-oscuro);
+}
+
+.panel_destacados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.imagen_destacados {
+    width: 100vw;
+    max-width: 600px;
+}
+
+.descripcion-imagen {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 5px 20px;
+}
+
+.button_destacado {
+    color: var(--boton-rojo);
+    font-weight: bold;
+    margin: 0 auto;
+}

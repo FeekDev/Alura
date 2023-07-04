@@ -1,0 +1,15 @@
+:root {
+    --Azul-claro: #EAF2FD;
+    --Azul-oscuro: #2A7AE4;
+    --Gris-claro: #F5F5F5;
+    --Gris-medio: #C8C8C8;
+    --Gris-oscuro: #A2A2A2;
+    --Blanco: #FFFFFF;
+    --Negro-opaco: #464646;
+    --PT-Sans-Caption: 'PT Sans Caption';
+
+}
+
+body {
+    font-family: var(--PT-Sans-Caption);
+}

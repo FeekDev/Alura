@@ -1,0 +1,30 @@
+.contacto {
+    display: flex;
+    padding: 3rem 3rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo_contacto {
+    margin-bottom: 2rem;
+    font-family: var(--Montserrat);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--fuente-ceniza-oscuro);
+}
+
+.texto_contacto{
+    margin-bottom: 2rem;
+    font-family: var(--Opens-Sans);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.boton_contacto {
+    font-family: var(--Opens-Sans);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--boton-rojo);
+    font-style: normal;
+    width: 100%;
+}

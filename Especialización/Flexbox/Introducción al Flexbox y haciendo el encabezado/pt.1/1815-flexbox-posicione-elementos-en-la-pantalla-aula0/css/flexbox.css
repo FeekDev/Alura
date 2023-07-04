@@ -1,0 +1,127 @@
+.headerPrincipal .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2;
+}
+
+.videoSobre-button {
+    justify-content: space-around;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm {
+    width: 20%;
+    margin-right: 3%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .headerPrincipal .container {
+        flex-direction: column;
+    }
+
+    .headerPrincipal-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: auto;
+    }
+
+    .rodapePrincipal-navMap-list {
+        flex-wrap: nowrap;
+        height: auto;
+    }
+
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .rodapePrincipal-contatoForm {
+        display: flex;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    .videoSobre .container {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .videoSobre-sobre-list {
+        flex-grow: 2;
+    }
+}
