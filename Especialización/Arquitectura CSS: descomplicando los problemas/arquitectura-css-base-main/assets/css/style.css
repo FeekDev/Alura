@@ -1,0 +1,28 @@
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    flex-direction: row;
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__items {
+    list-style: none;
+}
+
+.menu__items:first-child {
+    font-weight: bold;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #808080;
+    margin-right: 1rem;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
