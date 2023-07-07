@@ -1,0 +1,7 @@
+.menu__items {
+    list-style: none;
+}
+
+.menu__items:first-child {
+    font-weight: bold;
+}
