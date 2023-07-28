@@ -1,0 +1,10 @@
+.persona {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 0) {
+    .persona {
+        margin-bottom: 1.5rem;
+    }
+}

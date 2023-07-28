@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    padding-top: 7rem;
+    
+}
+
+@media screen and (min-width: 0) {
+    .footer {
+        flex-direction: row;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-right: .2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        justify-content: space-between;
+        flex-direction: row;
+        padding-right: 4rem;
+        padding-left: 4rem;
+        margin-right: .2rem;
+        align-items: center;
+    }
+}

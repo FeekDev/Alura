@@ -1,4 +1,16 @@
 .imagen__banner {
-    width: 100vw;
-    height: calc(100vw - 620px);
-}    
+    background: url(../../img/banner.png) no-repeat center / cover;
+    width: 100%;
+} 
+
+@media screen and (min-width: 0) {
+    .imagen__banner {
+        height: calc(100vh - 50px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .imagen__banner {
+        height: calc(100vh - 72px);
+    }
+}

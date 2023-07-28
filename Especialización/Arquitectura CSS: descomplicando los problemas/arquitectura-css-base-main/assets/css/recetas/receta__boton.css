@@ -1,0 +1,13 @@
+.receta__boton {
+    background: #DA2B1F;
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+    padding: .5rem .8rem;
+    transition-duration: 2s;
+}
+
+.receta__boton:hover {
+    background: #921a12;
+    transition-delay: .3s;
+}
